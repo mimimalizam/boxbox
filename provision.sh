@@ -72,8 +72,9 @@ echo "[PROVISIONER] Installing ruby"
 sudo apt-get -y install software-properties-common
 sudo apt-add-repository ppa:brightbox/ruby-ng
 sudo apt-get update
+sudo apt-get -y install ruby2.5 ruby2.5-dev
 sudo apt-get -y install ruby2.3 ruby2.3-dev
-sudo gem install bundler
+sudo apt-get -y install ruby-switch
 
 echo "[PROVISIONER] Installing awscli"
 pip install awscli --upgrade --user
